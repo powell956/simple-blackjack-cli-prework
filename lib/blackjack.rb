@@ -30,9 +30,6 @@ def initial_round
 end
 
 def hit?(card_total)
-  if card_total > 21
-    end_game
-  end
   prompt_user
   input = get_user_input
   if input == 's'
