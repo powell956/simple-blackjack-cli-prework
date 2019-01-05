@@ -62,3 +62,5 @@ def runner
   binding.pry
   end_game
 end
+
+runner
