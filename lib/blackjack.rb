@@ -30,7 +30,16 @@ def initial_round
 end
 
 def hit?(card_total)
-
+  if card_total > 21
+    end_game
+  end
+  prompt_user
+  input = get_user_input
+  if input == 's'
+    hit?
+  elsif input == 'h'
+    card_total += deal_card
+    hit?
 end
 
 def invalid_command
